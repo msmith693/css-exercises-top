@@ -1,0 +1,19 @@
+p {
+    background-color: rgb(218, 92, 99);
+    font-family: Verdana, "DejaVu Sans", serif;
+}
+
+.adjusted-font-size{
+    font-size: 24px;
+}
+
+#second-item{
+    color: #0042bd;
+    font-size: 36px;
+}
+
+#fourth-item{
+    background-color: hsl(100, 86%, 47%);
+    font-weight: bold;
+}
+
