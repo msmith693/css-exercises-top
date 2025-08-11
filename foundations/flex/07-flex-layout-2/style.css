@@ -2,28 +2,70 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   margin: 0;
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main{
+  display: flex;
+}
+
+.info{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 48px;
 }
 
 .header {
+  display:flex;
   height: 72px;
   background: darkmagenta;
   color: white;
+  font-size: 32px;
+  font-weight: 900;
+  padding: 0 16px;   /*was ambiguous in README.md that 16px from edge of screen only meant left side of screen and not top and bottom*/
+  align-items: center;
 }
 
 .footer {
+  display:flex;
   height: 72px;
   background: #eee;
   color: darkmagenta;
+  align-items: center;
+  justify-content: center;
 }
 
 .sidebar {
-  width: 300px;
+  min-width: 300px;
   background: royalblue;
   box-sizing: border-box;
+  flex: 1;
+  padding: 16px;
 }
 
 .card {
   border: 1px solid #eee;
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
+  width: 300px;
+  margin: 8px;
 }
+
+a{
+  font-size: 24px;
+  color:#eee;
+  text-decoration: none;
+}
+
+ul{
+  display:flex;
+  flex-direction: column;
+  list-style-type: none;
+  padding:0px;
+  margin:0;
+}
+
+li{
+  margin-bottom: 16px;  /*didn't see this gap in original picture, had to add in*/
+} 
